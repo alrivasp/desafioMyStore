@@ -18,7 +18,11 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title text-danger">{{ producto.nombreMovie }}</h5>
               <p class="card-text">
-                {{ producto.descripcionDisco }}
+                {{ producto.descripcionMovie }}
+              </p>
+              <p class="card-text">
+                <i>Tipo formato: </i>
+                {{ producto.tipo }}
               </p>
               <div>
                 <div v-if="producto.acepta === true">
